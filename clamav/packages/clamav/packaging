@@ -6,12 +6,6 @@ mkdir -p /var/vcap/packages/clamav
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 export HOME=/var/vcap
 export CLAMAV_HOME=/var/vcap/packages/clamav
-
-# install dependency libs here
-#sudo dpkg -i -E clamav/multiarch-support_2.17-93ubuntu4_amd64.deb
-#sudo dpkg -i -E clamav/zlib1g_1.2.8.dfsg-1ubuntu1_amd64.deb
-#sudo dpkg -i -E clamav/zlib1g-dev_1.2.8.dfsg-1ubuntu1_amd64.deb
-
 export COMPILE_HOME=`pwd`
 
 tar xvzf clamav/virus_defs.tar -C $CLAMAV_HOME
