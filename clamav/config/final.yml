@@ -3,8 +3,5 @@ final_name: emc-clamav
 blobstore:
   provider: local
   options:
-    blobstore_path: blobstore
-
-
-
+    blobstore_path: /tmp/clamav-blobstore
 
